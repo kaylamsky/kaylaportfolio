@@ -368,7 +368,7 @@ footer {
 @media (max-width: 700px){
   header {
     width: 100%;
-    height: 50px; 
+    height: 80px; 
     padding-top: 10px;
     display: flex;
     flex-direction: row; 
@@ -381,14 +381,13 @@ footer {
 
   #h1 {
       color: rgb(252, 206, 212);
-      font-size: 45px; 
-      justify-content: center;
-      align-items: center;
+      font-size: 32px; 
+      text-align: center;
   }
 
   #homepage{
-    width: 100vw;
-    height: 50px; 
+    width: 100%;
+    height: 250px; 
     background-color: rgb(252, 206, 212);
   }
 
@@ -402,6 +401,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    padding: 0px 10px; 
   }
 
   .navbar-brand{
@@ -411,18 +411,20 @@ footer {
 
   #toggleButton{
     margin: 5px;
-    transform:scale(0.5); 
+    transform:scale(0.8); 
   }
 
   #toggleButtonLabel{
-    font-size: 10px; 
-    margin: 2px; 
+    font-size: 12px; 
+    margin: 4px; 
   }
+
   .left-tabs{ 
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 8px; 
     color: rgb(66,102,40); 
+    flex-wrap: wrap;
   }
 
   .left-tabs .navbar-brand{
@@ -433,7 +435,7 @@ footer {
   }
 
   .left-tabs .nav-link{
-    font-size: 10px; 
+    font-size: 14px; 
     color: rgb(66,102,40);
   }
 
@@ -442,8 +444,8 @@ footer {
   }
 
   .navbar-brand img{
-    width: 30px;
-    height: 30px; 
+    width: 40px;
+    height: 40px; 
   }
 
   .left-tabs a:hover{
@@ -452,28 +454,25 @@ footer {
 
   /*about-me section*/  
   .about-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 10px; 
     gap: 15px; 
   }
   
   #me-img{
-    width: 10%;
+    width: 70%;
     height: auto; 
-    border: 3px; 
   }
   
   .about-me{
-    width: 15%;
-    font-size:8px;
-    text-align: left; 
+    width: 90%;
+    font-size: 14px;
+    text-align: center; 
   }
   
   #about-header{
-    font-size: 15px; 
+    font-size: 22px; 
     margin-bottom: 10px;
     text-align: center; 
   }
@@ -485,7 +484,7 @@ footer {
 }
 
 #education-header{
-    font-size: 15px;
+    font-size: 22px;
     text-align: center; 
   }
   
@@ -495,25 +494,26 @@ footer {
 }
 
 .card{
-  height: auto;
-  width: 90%;
-  padding: 5px;
-  margin: 5ps auto;
+  width: 95%;
+  padding: 8px;
+  margin: 10px auto;
 }
 
 .card-title{
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 
 .edu-list{
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
 }
 
 .school-btn{
   background-color:rgb(252, 206, 212);
-  font-size: 10px;
+  font-size: 14px;
+  padding: 6px 10px;
+  margin-top: 8px;
 }
   
 .school-btn:hover{
@@ -527,57 +527,58 @@ footer {
 }
 
 #project-header{
-  font-size: 15px; 
+  font-size: 22px; 
   text-align: center;
   margin-bottom: 10px; 
 }
 
 .projects-cards{
-  width: 90%;
-  height: 100%; 
+  width: 95%;
+  margin: 0px auto; 
   background-color: white;
-  padding: 5px; 
+  padding: 8px; 
 }
 
 .projects-body{
-  font-size: 10px; 
+  font-size: 14px; 
   padding: 5px 10px;
 }
 
 .projects-text{
   text-align: center;
-  font-size: 8px; 
+  font-size: 14px; 
   margin-top: 5px; 
 }
 
 #adobe-header{
   text-align: center;
-  font-size: 12px; 
+  font-size: 18px; 
+  margin: 10px 0px;
 }
 
 #cs-header{
-    text-align: center;
-    font-size: 12px; 
+  text-align: center;
+  font-size: 18px; 
+  margin: 10px 0px; 
 }
 
 .card-img{
-  display: flex;
-  width: 100%;
-  height: 250px;
-  margin: 5px auto;
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
 }
 
 .code-card-img{ 
   display: flex;
   width: 90%;
-  height: 200px;
-  margin: 5px auto;
+  height: auto;
+  margin: 10px auto;
   justify-content: center;
 }
 
 .code-btn{
   background-color:rgb(252, 206, 212);
-  font-size: 8px;
+  font-size: 14px;
   display: flex;
   align-items: center;
 }
@@ -596,19 +597,20 @@ footer {
   background-color: rgb(252, 206, 212);
   text-align: center;
   font-size: 8px;
-  padding: 10px 0px; 
+  padding: 20px 0px; 
 }
 
 #contact-header{
-  font-size: 10px; 
+  font-size: 18px;
+  margin-bottom: 10px;  
 }
 
 #contact .form-control{
-  width: 30%;
+  width: 90%;
   height: auto; 
   margin: 5px auto;
-  font-size: 8px;
-  padding: 2px 3px; 
+  font-size: 14px;
+  padding: 6px 10px; 
 }
 
 #contact .nb-3{
@@ -626,7 +628,7 @@ footer {
     background-color: rgb(66, 102, 40); 
     width: 100%;
     height: auto;
-    padding: 5px 0px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -634,13 +636,13 @@ footer {
   }
 
 #footer-id{
-  font-size: 20px;
+  font-size: 18px;
   color: lightpink;
   text-align: center; 
 }
 
 .ft{
-  margin: auto 25px; 
+  margin-top: 8px; 
 }
   
 }
