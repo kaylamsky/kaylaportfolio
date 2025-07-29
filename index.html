@@ -11,29 +11,29 @@
     <header>
         <h1 id="h1"> Kayla Motiram</h1>
     </header> 
-<div class = "form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" id="toggleButton">
-        <label class="form-check-label" for="toggleButton" id="toggleButtonLabel">Light Mode</label>
-</div>
 
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#education"> Education</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#contact"> Contact</a>
-    </li>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="left-tabs">
+        <a class="navbar-brand" href="#home">
+          <img src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=PastelYellow&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Brown" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+          Home
+        </a>
     
-</ul>
+        <a class="nav-link" href="#education"> Education</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact"> Contact</a>
+      </div>
+
+    <div class = "form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="toggleButton">
+      <label class="form-check-label" for="toggleButton" id="toggleButtonLabel">Light Mode</label>
+    </div>
+
+  </div>
+  </nav>
 
 <section id="home">
-    <img id="homepage" alt="Hi there!" src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=PastelYellow&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Brown"/>
     <div class="about-container">
         <img id="me-img" alt="professional photo" src="pfp.jpeg">
     <div class="about-me">
@@ -54,7 +54,7 @@
             <div class="card-body">
               <h5 class="card-title">Thomas A. Edison VOC High School</h5>
               <div class="card-text">
-                <ul class="list" type="circle">
+                <ul class="edu-list" type="circle">
                   <li> Graduted June 2020 </li>
                   <li> National Honor Sociey </li>
                   <li> Visual Arts Program</li>
@@ -72,10 +72,8 @@
               <h5 class="card-title">CUNY Queens College</h5>
               <p class="card-text">Pursing a Bachelor's degree in Computer Science with an expected graduation of Fall 2025.</p>
               <br>
+              <br> 
               <br>
-              <br>
-              <br>
-            
               <a href="https://www.qc.cuny.edu" class="btn school-btn" target="_blank">School's website</a>
             </div>
           </div>
@@ -85,14 +83,14 @@
 
 <section id="projects">
     <h2 id="project-header"> Projects & Skills </h2>
-    <h3 id="adobe-header">Adoble Creative Cloud</h3>
+    <h3 id="adobe-header">Adobe Creative Cloud</h3>
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-4 d-flex">
             <div class="projects-cards w-100">
               <img src="Christmas.jpeg" class="card-img" alt="indesign" id="indesign-img">
               <div class="projects-body">
-                <h3 id="card-title"> Adobe Photoshop & InDesign </h3>
+                <h3 id="p-card-title"> Adobe Photoshop & InDesign </h3>
                 <p class="projects-text"> Designed a Christmas card using Adobe InDesign for layout and measurement for printing and Adobe Photoshop for editing images. </p>
               </div>
             </div>
@@ -102,7 +100,7 @@
             <div class="projects-cards w-100">
               <img src="vector.jpeg" class="card-img" alt="vector art" id="vector-img">
               <div class="projects-body">
-                <h3 id="card-title"> Adobe Illustrator </h3>
+                <h3 id="p-card-title"> Adobe Illustrator </h3>
                 <p class="projects-text"> Used Adobe Illustrator pen and shape tools to recreate a photo of a bowl of fruit as practice for vector tracing. </p>
               </div>
             </div>
@@ -112,8 +110,8 @@
             <div class="projects-cards w-100">
               <img src="blood-drive.jpeg" class="card-img" alt="blood drive poster" id="blood-drive">
               <div class="projects-body">
-                <h3 id="card-title"> Adobe Illustrator & Photoshop </h3>
-                <p class="projects-text"> Created an attention-grabbing poster to help promote particpants for a blood drive using vector elements in Adobe Illustrator and Adobe Photoshop. </p>
+                <h3 id="p-card-title"> Adobe Illustrator & Photoshop </h3>
+                <p class="projects-text"> Created an attention-grabbing poster to help promote particpants in a blood drive by combing vector elements using Adobe Illustrator and Adobe Photoshop. </p>
               </div>
             </div>
           </div>
@@ -123,35 +121,35 @@
       <h3 id="cs-header">Programming Projects</h3>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4">
-            <div class="projects-cards">
+          <div class="col-md-4 d-flex">
+            <div class="projects-cards w-100">
               <img src="letterCount.png" class="code-card-img" alt="letter-count" id="java1-img">
               <div class="projects-body">
-                <h3 id="card-title"> Java Program </h3>
+                <h3 id="p-card-title"> Java Program </h3>
                 <p class="projects-text"> In this Java program, I have designed a functional game for the user. The user is prompted to enter a sentence, and in return gets a pop up message utilizing the GUI function in Java that counts how many lower case and captial E's were found in the given sentence. This image provided shows the results if the input sentence is "This is cute". </p>
-                <a href="https://github.com/kaylamsky/letterCount" class="btn code-btn" target="_blank">Github link to this program's code</a>
+                <a href="https://github.com/kaylaskym/letterCount" class="btn code-btn" target="_blank">Github link to this program's code</a>
               </div>
             </div>
           </div>
       
-          <div class="col-md-4">
-            <div class="projects-cards">
+          <div class="col-md-4 d-flex">
+            <div class="projects-cards w-100">
               <img src="battleship.png" class="code-card-img" alt="battleship" id="java2-img">
               <div class="projects-body">
-                <h3 id="card-title"> Java Program - Battleship Game </h3>
+                <h3 id="p-card-title"> Java Program - Battleship Game </h3>
                 <p class="projects-text"> In this Java program, I used different coding techniques to create my own version of the classic "Battleship" board game. In this photo, you can see how the program functions. When part of a ship is hit, the box turns red. When the entire ship has sunk, a GUI pop up message will inform the user. If the user selects a spot where there is no ship, the box will turn white so the user knows they've already tried that spot. The placement of the ships are randomly generated per game.   </p>
-                <a href="https://github.com/kaylamsky/battleship" class="btn code-btn" target="_blank">Github link to this program's code</a>
+                <a href="https://github.com/kaylaskym/battleship" class="btn code-btn" target="_blank">Github link to this program's code</a>
               </div>
             </div>
           </div>
       
-          <div class="col-md-4">
-            <div class="projects-cards">
+          <div class="col-md-4 d-flex">
+            <div class="projects-cards w-100">
               <img src="sql-database.png" class="code-card-img" alt="sql database" id="sql-java">
               <div class="projects-body">
-                <h3 id="card-title"> Georgia Tech Library SQL Database, with Java implementation </h3>
+                <h3 id="p-card-title"> Georgia Tech Library SQL Database, with Java implementation </h3>
                 <p class="projects-text"> This project is primarily SQL based in which I created a database for a potential library case. This database supported real-world functions that a library would need. Such as, creating library members, book checkouts, return, basic user and staff account management, and more. I completed this project through a designed and quiered relational database and then implemented backend Java.  </p>
-                <a href="https://github.com/kaylamsky/sqlDatabase" class="btn code-btn" target="_blank" >Github link to this program's code</a>
+                <a href="https://github.com/kaylaskym/sqlDatabase" class="btn code-btn" target="_blank" >Github link to this program's code</a>
               </div>
             </div>
           </div>
@@ -161,7 +159,7 @@
 </section>
 
 <section id="contact">
-    <h2> Contact</h2>
+    <h2 id="contact-header"> Contact</h2>
     <div class="contact-container">
       <p>
           Please reach out through email for any questions. </p>
@@ -175,7 +173,6 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
     <button type="submit" style="background-color:palevioletred; color: white;" class="btn btn-primary"> Send </button>
-</div>
 </section>
 
 </body>
