@@ -364,14 +364,12 @@ footer {
 
 }
   
- 
-
 /*small screen*/
 @media (max-width: 700px){
   header {
-    width: 100vw;
-    height: 70px; 
-    padding-top: 20px;
+    width: 100%;
+    height: 50px; 
+    padding-top: 10px;
     display: flex;
     flex-direction: row; 
     justify-content: center;
@@ -379,21 +377,19 @@ footer {
     background-color: rgb(66, 102, 40); 
     color: white; 
     font-family: 'ScriptFont', sans-serif;
-    
-    }
-  
+  }
+
   #h1 {
-      color: rgb(250, 193, 201);
+      color: rgb(252, 206, 212);
       font-size: 45px; 
       justify-content: center;
       align-items: center;
   }
+
   #homepage{
     width: 100vw;
-    height: 500px; 
+    height: 50px; 
     background-color: rgb(252, 206, 212);
-    border: 1px solid lightcoral;
-  
   }
 
   #home{
@@ -401,165 +397,240 @@ footer {
     color: black; 
   
   }
-  .nav-tabs{ 
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; 
-      justify-content: center;
-      padding: 10px; 
-  
-  }
-    
-  .nav-tabs .nav-link {
+  /*tabs under header*/
+  .navbar .container-fluid{
     display: flex;
-      font-size: 14px;  
-      padding: 5px 5px 5px 5px; 
-      color: darkgreen !important;
-  }
-  
-  #homepage {
-      width: 100vw;
-      height: 100px;
-      background-color: rgb(252, 206, 212);
-      border: 1px solid lightcoral;
-       
-  }
-  
-  .about-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    
-  
+    justify-content: space-between; 
+  }
+
+  .navbar-brand{
+    margin: 0px;
+    color: rgb(66,102,40); 
+  }
+
+  #toggleButton{
+    margin: 5px;
+    transform:scale(0.5); 
+  }
+
+  #toggleButtonLabel{
+    font-size: 10px; 
+    margin: 2px; 
+  }
+  .left-tabs{ 
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: rgb(66,102,40); 
+  }
+
+  .left-tabs .navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 10px;
+  }
+
+  .left-tabs .nav-link{
+    font-size: 10px; 
+    color: rgb(66,102,40);
+  }
+
+  .navbar .form-check{
+    margin-left: auto; 
+  }
+
+  .navbar-brand img{
+    width: 30px;
+    height: 30px; 
+  }
+
+  .left-tabs a:hover{
+    color: rgb(252,206,212);
+  }
+
+  /*about-me section*/  
+  .about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px; 
+    gap: 15px; 
   }
   
   #me-img{
-    width: 80%;
+    width: 10%;
     height: auto; 
+    border: 3px; 
   }
   
   .about-me{
-    font-size:20px;
+    width: 15%;
+    font-size:8px;
+    text-align: left; 
   }
   
   #about-header{
-    font-size: 30px; 
-  }
-  
-  #toggleButton{
-    padding: 5px 5px 5px 5px; 
-    transform: scale(1.0); 
-  
-  }
-  
-  #toggleButtonLabel{ 
-    font-size: 15px;
-  }
-  
-  #education-header{
-    font-size: 30px;
+    font-size: 15px; 
+    margin-bottom: 10px;
     text-align: center; 
   }
   
-  #education{
-    background-color: rgb(255, 255, 154); 
-    border: 1px solid lightcoral;
-  }
-  
-  .school-btn{
-    background-color:rgb(255, 255, 154);
-    font-size: 20px;
-  }
-  
-  .school-btn:hover{
-    background-color: rgb(175, 170, 170); 
-  
-  }
-  
-  .card{
-     height: auto;
-      width: 100%; 
-      margin: 15px auto;
-  }
-  
-  .card-title{
-    font-size: 18px; 
-  }
-  
-  .card-text{
+/*education section*/
+#education{
+  background-color: white; 
+  padding: 10px; 
+}
+
+#education-header{
     font-size: 15px;
+    text-align: center; 
   }
   
-  #adobe-header{
+.list{
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.card{
+  height: auto;
+  width: 90%;
+  padding: 5px;
+  margin: 5ps auto;
+}
+
+.card-title{
+  font-size: 15px;
+  text-align: center;
+}
+
+.edu-list{
+  font-size: 16px;
+  text-align: left;
+}
+
+.school-btn{
+  background-color:rgb(252, 206, 212);
+  font-size: 10px;
+}
+  
+.school-btn:hover{
+  background-color: rgb(222, 144, 155); 
+}
+  
+/*projects section*/
+#projects{
+  background-color: white;
+  padding: 10px; 
+}
+
+#project-header{
+  font-size: 15px; 
+  text-align: center;
+  margin-bottom: 10px; 
+}
+
+.projects-cards{
+  width: 90%;
+  height: 100%; 
+  background-color: white;
+  padding: 5px; 
+}
+
+.projects-body{
+  font-size: 10px; 
+  padding: 5px 10px;
+}
+
+.projects-text{
+  text-align: center;
+  font-size: 8px; 
+  margin-top: 5px; 
+}
+
+#adobe-header{
+  text-align: center;
+  font-size: 12px; 
+}
+
+#cs-header{
     text-align: center;
-    font-size: 25px; 
-  }
-  
-  
-  #projects{
-    background-color: rgb(249, 225, 245);
-  }
-  
-  #project-header{
-    font-size: 30px; 
-    text-align: center;
-    padding-bottom: 10px; 
-  }
-  
-  .projects-cards{
-    width: 100%;
-    height: auto; 
-    background-color: rgb(189, 222, 165);
-  }
-  
-  .projects-body{
-    font-size: 15px; 
-    padding: 10px 15px;
-  }
-  .projects-text{
-    text-align: center;
-    font-size: 15px; 
-  }
-  
-  #cs-header{
-    padding: 10px 10px 10px 10px; 
-    text-align: center;
-    font-size: 25px; 
-  }
+    font-size: 12px; 
+}
 
-  .card-img{
-    margin: 30px 30px 10px 40px;
-    width: 80%;
-    height: 70%;
-  }
+.card-img{
+  display: flex;
+  width: 100%;
+  height: 250px;
+  margin: 5px auto;
+}
 
-  .code-card-img{ 
-    margin: 30px 30px 10px 40px;
-    width: 80%;
-    height: 50%;
+.code-card-img{ 
+  display: flex;
+  width: 90%;
+  height: 200px;
+  margin: 5px auto;
+  justify-content: center;
+}
 
-  }
-
-  .code-btn{
-    background-color:rgb(255, 255, 154);
-    font-size: 15px;
-  }
+.code-btn{
+  background-color:rgb(252, 206, 212);
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+}
   
-  .code-btn:hover{
-    background-color: rgb(175, 170, 170); 
-  
-  }
+.code-btn:hover{
+  background-color: rgb(222, 144, 155); 
+}
 
+#p-card-title{
+  text-align: center;
+  font-size: 10px; 
+}
+
+/*contact section*/
+#contact{
+  background-color: rgb(252, 206, 212);
+  text-align: center;
+  font-size: 8px;
+  padding: 10px 0px; 
+}
+
+#contact-header{
+  font-size: 10px; 
+}
+
+#contact .form-control{
+  width: 30%;
+  height: auto; 
+  margin: 5px auto;
+  font-size: 8px;
+  padding: 2px 3px; 
+}
+
+#contact .nb-3{
+  margin-bottom: 5px;
+}
+
+.btn btn-primary{
+  color: lightpink; 
+  margin-top: 5px;
+  margin-bottom: 0px; 
+}
+
+/*footer section*/
   footer {
     background-color: rgb(66, 102, 40); 
-    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
     display: flex;
-    width: 100vw;
-    height: 10vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
   }
 
 #footer-id{
@@ -569,26 +640,7 @@ footer {
 }
 
 .ft{
-  margin: 0px 0px 0px 10px; 
+  margin: auto 25px; 
 }
   
-#contact{
-  margin-top: 0px;
-  background-color:lightpink; 
-  text-align: center;
-  font-size: 15px;
-  width: 100vw;
-  height: 300px;
-
-}
-
-.form-control{
-  display: flex;
-  width: 100vw;
-  height: 40px;
-}
-
-.btn btn-primary{
-  color: lightpink; 
-}
 }
